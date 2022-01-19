@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    color: #5f6368;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    color: #5f6368;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li:not(:first-child){
+    margin: 0 15px;
+}
+
+li.selezionato{
+    color: #3367d6;
+}
+li.selezionato::after{
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: -22px;
+    content: "";
+    width: auto;
+    height: 3px;
+    background-color: #3367d6;
+}
+
+.cont{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.domanda{
+    color: #45494b;
+    margin-bottom: 20px;
+}
+
+.risposta{
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.risposta p{
+    margin: 30px 0;
+    line-height: 22px;
+}
+
+a{
+    text-decoration: none;
+    color: #3367d6;
+}
+
+.prima-lista{
+    margin-left: 16px;
+}
+
+.seconda-lista{
+    margin: 15px 0;
+    margin-left: 30px;
+    list-style-type: lower-alpha;
+}
+
+li{
+    margin: 10px 0;
+}
+
+.risposta h3{
+    margin-top: 60px;
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.cont-f{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cont-f span{
+    color: gray;
+    font-size: 12px;
+}
